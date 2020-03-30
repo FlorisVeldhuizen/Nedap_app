@@ -9,59 +9,36 @@
   <!-- CSS
   ================================================== -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- JS preliminaries -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/rainbowvis.js"></script>
+  <script type="text/javascript" src="js/sortable.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/snakesladders.js"></script>
 </head>
 
 <body>
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
   <!-- CONTENT -->
-  <div class="container-fluid">
-    <div class="row flex-xl-nowrap">
-      <div class="col-md-3 col-xl-2">
-        
-      </div>
-      <div class="col-md-9 col-xl-8 py-md-3 pl-md-5">
-        <h1> Hello there! </h1>
-        <p> This is the first paragraph of this app. </p>
+  <div class="container my-4">
+    <h1> Welcome to this listmaking app, let's make a list together!</h1>
+    <p class="my-4"> Let's start by adding an item to the list below. You can add items to the list by using the submit button, or by editing the list directly. </p>
+    <form class="form-inline px-3 my-4 row" onsubmit="return false">
+      <input id="inputvalue" class="col-sm-9 form-control" type="text" placeholder="Submit">
+      <button id="additembutton" class="col-sm-2 offset-md-1 btn btn-block btn-outline-success" onclick="addItem()">Submit</button>
+    </form>
+    <div class="row">
+      <div class="col-md-12">
+        <ul id="itemlist" >
+          <li id="item1"> Test item </li>
+          <li id="item2"> Test item </li>
+          <li id="item3"> Test item </li>
+          <li id="item4"> Test item </li>
+          <li id="item5"> Test item </li>
+          <li id="item6"> Test item </li>
+        <ul>
       </div>
     </div>
   </div>

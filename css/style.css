@@ -1,0 +1,27 @@
+body{
+  background: #eee;
+}
+ul{
+  outline:none;
+  padding-left: 0px;
+  list-style-type: none;
+}
+li{
+  padding: 20px;
+  text-align: left;
+  color:white;
+}
+li button{
+  position: absolute;
+  color:grey;
+  margin-top:-5px;
+}
+.btn-remove{
+  right:25px;
+}
+.btn-check{
+  right:70px;
+}
+.checked{
+  background: grey!important;
+}
