@@ -10,6 +10,7 @@ let turn = function() {
   nextloc = curloc + steps;
   if(nextloc > 25) {
     console.log("woah, you beat the game!");
+    curloc = nextloc;
     return;
   }
   console.log("the new position of the player is: " + nextloc);
